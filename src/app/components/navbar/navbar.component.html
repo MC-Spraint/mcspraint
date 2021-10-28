@@ -1,0 +1,14 @@
+<div id="nav">
+	<div class="logo">
+		<img style="height:auto; width:3rem; margin:30%;" src="/assets/images/logo.png" alt="logo">
+	</div>
+	<ul>
+		<li><a routerLink="/home">Home</a></li>
+		
+		<div *ngFor="let p of appPages;">
+			<li><a [routerLink]="p.url">{{p.title}}</a></li>
+		</div>
+		
+	</ul>
+</div>
+<div id="nav2"></div>

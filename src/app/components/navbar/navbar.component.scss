@@ -1,0 +1,67 @@
+/*Navbar starts*/
+#nav2 {
+  position: fixed;
+  top: 0;
+  background: rgb(0, 0, 0);
+  opacity: 0.3;
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  animation-name: navbar;
+  animation-duration: 3s;
+}
+@keyframes navbar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+#nav {
+  background: transparent;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+  z-index: 2;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  #nav {
+    display: none;
+  }
+  #nav2 {
+    display: none;
+  }
+}
+#nav ul {
+  display: flex;
+  list-style: none;
+  
+  margin: auto 1rem;
+}
+
+#nav ul li {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+#nav ul li :hover {
+  color: black;
+  background-color: rgb(222, 243, 30);
+}
+#nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1.5rem;
+}
+#nav ul li a :hover {
+  color: blue;
+  background-color: red;
+}

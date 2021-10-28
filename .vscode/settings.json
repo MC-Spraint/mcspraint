@@ -1,0 +1,44 @@
+{
+    "explorer.confirmDelete": true,
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "workbench.colorCustomizations": {
+            "terminal.foreground": "#76d8ff",
+            "terminal.background": "#0a0a27",
+            "terminal.ansiBrightBlue": "#1717f3",
+            "terminal.ansiBrightGreen": "#08ff15",
+            "terminal.ansiGreen": "#ffffff",
+            "terminal.ansiBrightBlack": "#ff0000",
+            "terminalCursor.foreground": "#ff0000",
+            "terminalCursor.background": "#ff0000",
+            "terminal.ansiBlue": "#000000",
+            "terminal.selectionBackground": "#042a57",
+            "terminal.tab.activeBorder": "#09ff2a",
+            "terminal.ansiYellow": "#ff0000"
+            
+    
+    }
+}
+
+
