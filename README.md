@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[33mcommit 9e53dd5e4d1b64f8846dcf289d8427a62e8665ef[m[33m ([m[1;36mHEAD -> [m[1;32msimple[m[33m)[m
+Author: Snahashis Das(Mc Spraint) <mcspraint954@gmail.com>
+Date:   Thu Oct 28 21:10:59 2021 +0530
+
+    added /www in gitignore
+
+[33mcommit 1f9565fc6a2843fd443021d38223e944fb29e65a[m
+Author: Snahashis Das(Mc Spraint) <mcspraint954@gmail.com>
+Date:   Thu Oct 28 20:39:34 2021 +0530
+
+    Initial commit
