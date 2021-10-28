@@ -1,10 +1,18 @@
-# NgLearner
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+# Spraintfolio
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3 and completely developed
+by MC Spraint A.K.A Snahashis Das.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## DEVELOPMENT Server
+
+Run `ng build --watch` or `ng build` and then run `node server`.
+Your application is now deployed in a node server(server.js).
+if you experience loss of responsiveness in layout after deployment mode, you should
+go to the head section of the index.html file in dist/ folder where you will find "min-width:992px !important" then
+change it to "min-width: 134px !important".
 
 ## Code scaffolding
 
@@ -12,7 +20,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `www/` directory.
 
 ## Running unit tests
 
