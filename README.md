@@ -6,7 +6,7 @@ This project was initially generated with [Angular CLI](https://github.com/angul
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## DEVELOPMENT Server
+## Deployment Server
 
 Run `ng build --watch` or `ng build` and then run `node server`.
 Your application is now deployed in a node server(server.js).
