@@ -65,3 +65,10 @@
   color: blue;
   background-color: red;
 }
+@media (min-width: 700px) {
+  .navmobile {
+    display: none;
+    z-index:2;
+  }
+  
+}
