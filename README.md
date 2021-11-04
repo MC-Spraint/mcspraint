@@ -1,5 +1,5 @@
 # Spraintfolio
-
+Link of the project https://spraintswebtech.herokuapp.com/home
 This project was initially generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3 and developed by Mc SPraint A.K.A Snahashis Das.
 
 ## Development server
