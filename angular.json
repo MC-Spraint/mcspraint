@@ -35,7 +35,6 @@
             ],
             "styles": [
               "src/styles.scss","bootspraint/bootstrap.min.css",
-              "node_modules/aos/dist/aos.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/aos/dist/aos.css"],
             
