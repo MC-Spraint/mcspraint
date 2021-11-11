@@ -9,7 +9,10 @@ export class AppComponent implements OnInit {
   title = 'McSpraint';
   constructor(){}
   ngOnInit(){
-    AOS.init();
+    AOS.init(
+      {offset:300,
+      duration:1000}
+    );
   }
   
 }
