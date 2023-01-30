@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server:
+    container_name: mcspraint
+    build:
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/mcspraint
+      - /home/mcspraint/node_modules
