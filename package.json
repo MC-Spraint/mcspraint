@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "scripts": {
     "ng": "ng",
-    "testing": "node server.js",
+    "testing": "npm install && node server.js",
+    "testing2": "node server.js",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
