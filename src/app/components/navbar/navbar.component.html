@@ -1,17 +1,31 @@
-<div id="nav">
-	<div class="logo">
-		<img style="height:auto; width:3rem; margin:30%;" src="/assets/images/logo.png" alt="logo">
-	</div>
-	<ul>
-		<li><a routerLink="/home">Home</a></li>
+<section id="nav">
+	<section class="nav-left">
+		<section class="logo">
+			<a  routerLink="/home"><img src="/assets/images/logo.png" alt="logo"></a>
+		</section>
 		
-		<div *ngFor="let p of appPages;">
-			<li><a [routerLink]="p.url">{{p.title}}</a></li>
-		</div>
+		<ul>
+			<li><a routerLink="/home">Home</a></li>
+			<li *ngFor="let p of appPages;"><a [routerLink]="p.url">{{p.title}}</a></li>
+		</ul>
 		
-	</ul>
-</div>
+		<section class="dDown">
+		<button class="btn-dDown">See More</button>
+			<section class="dContent">
+				<a [routerLink]="m.url"  *ngFor="let m of morePages;">{{m.title}}</a>
+			</section>
+		</section>
+	</section>
+
+	<section class="nav-right">
+		<button *ngIf="_auth.loggedInUser()" (click)="_auth.logOut()" class="bttn-g-d">LogOut</button>
+		<button *ngIf="!_auth.loggedInUser()" routerLink="/auth/login" class="bttn-g-p">LogIn</button>
+		<button *ngIf="!_auth.loggedInUser()" routerLink="/auth/signup" class="bttn-g-p">SignUp</button>
+	</section>
+</section>
+
 <div id="nav2"></div>
+
 
 <nav class="navmobile navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(24, 23, 23); width:100vw !important;">
 	<a class="navbar-brand" routerLink="/home">Mc-Spraint</a>

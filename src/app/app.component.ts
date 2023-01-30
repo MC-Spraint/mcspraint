@@ -1,5 +1,9 @@
 import { Component,OnInit } from '@angular/core';
+
+//import animation and icon library
 import * as AOS from 'aos';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,12 +11,14 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   title = 'McSpraint';
+  
   constructor(){}
+
   ngOnInit(){
     AOS.init(
-      {offset:300,
-      duration:2000}
+      {duration:1000, delay:0}
     );
   }
   
+
 }

@@ -34,14 +34,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss","bootspraint/bootstrap.min.css",
+              "src/styles.scss",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/aos/dist/aos.css"],
             
-            "scripts": ["bootspraint/jquery.slim.min.js",
-              "bootspraint/popper.min.js",
-              "bootspraint/bootstrap.min.js",
-              "node_modules/aos/dist/aos.js"]
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {

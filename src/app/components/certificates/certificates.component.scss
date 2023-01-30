@@ -1,0 +1,19 @@
+.cont {
+  
+  color: white;
+  
+}
+.img-fluid {
+  border: 20px solid white;
+  max-width: 95%;
+  height: auto;
+  @media screen and (max-width: 700px){
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+  
+
+  
+

@@ -1,9 +1,8 @@
 //HOME PAGE STARTER STARTS
 #homeStarter {
   text-align: center;
-  
   color: #fff;
-  background: url("/assets/images/bg-img.png") no-repeat center center/cover;
+  background: linear-gradient(45deg,rgb(56, 59, 247) 20%, rgb(15, 4, 116)40%,rgb(0, 0, 0)60%); /*url("/assets/images/bg-img.png") no-repeat center center/cover;*/
   background-attachment: scroll;
   padding: 15% 20%;
   min-height: 100vh;
@@ -16,13 +15,14 @@
   font-style: italic;
 }
 .img-fluid{
-  
+  border:10px solid white;
   max-width:100%;
   height: auto;
 }
 .anim {
   animation-name: animtn;
   animation-duration: 6s;
+  @media (max-width: 567px) {flex-direction:column-reverse;}
 }
 @keyframes animtn {
   from {
@@ -35,3 +35,15 @@
   }
 }
 //HOME PAGE STARTER ENDS
+h3{
+  font-family: fantacy;
+  @media (max-width: 1050px) {
+    font-size:20px;
+  }
+}
+h1{
+  font-family: fantacy;
+  @media (max-width: 1050px) {
+    font-size:30px;
+  }
+}

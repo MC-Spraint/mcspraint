@@ -1,0 +1,51 @@
+#Footer{
+    position:relative;
+    bottom:0;
+    right:0;
+    width:100vw;
+    min-height:30vh; color: rgb(165, 177, 187);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    padding:1rem 1rem;
+}
+.logo img{
+    height:auto;
+    width:4rem;
+    border-radius:50%;
+    border:10px solid black;
+}
+li {
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h5{
+    font-weight: bold; 
+    padding:0.5rem 0rem;
+    color: white;
+    border-bottom:3px solid white;
+    @media only screen and (max-width:575px){
+        font-size:15px;
+    }
+    @media only screen and (max-width:400px){
+        font-size:12px;
+    }
+}
+span{
+    @media only screen and (max-width:575px){
+        font-size:11px;
+    }
+    @media only screen and (max-width:400px){
+        font-size:9px;
+    }
+}
+.ic{
+    padding-right: 0.5rem;
+}

@@ -1,0 +1,47 @@
+<div class="container-fluid mb-0 my0" style="background: linear-gradient(45deg, rgb(15, 4, 116),rgb(0, 0, 0)70%); color: white;">
+    <div class="container mt-5 mx-auto">
+        <div class="text-center">
+            <span class="topic mt-5">
+                <h3 class="h-sz-prm">Reactive Form</h3>
+            </span>
+        </div>
+        <div class="row pt-5 pb-5 mb-5">
+            <div class="card col-12 w-50 d-flex">
+<!--Reactive form starts-->
+                <form [formGroup]="myForm"  (ngSubmit)="logForm()">
+                    <div formGroupName="productInfo">
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <p style="float: right;"  class="text-warning" *ngIf="productName && productName.invalid && productName.touched">*This field is required and should be 5 characters long at least</p>
+                            <input type="text" id="productName" class="form-control" formControlName="productName"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="imgUrl">Image URL</label>
+                            <p style="float: right;" class="text-warning" *ngIf="imgUrl && imgUrl.invalid && imgUrl.touched">*This field is required, provide a valid url</p>
+                            <input type="text" id="imgUrl" class="form-control" formControlName="imgUrl"/>
+                        </div>
+                    </div>
+
+                    <div class="radio" *ngFor="let stat of statuses">
+                        <input type="radio" id="status" [value]="stat" formControlName="status"/>
+                        <label for="status">{{stat}}</label>
+                    </div>
+
+                    <div formArrayName="sizes">
+                        <p>Available Sizes</p>
+                        <button  type="button" class="bttn-g-p" (click)="onAdd()">add</button>
+                        <div class="form-group" *ngFor="let ctrl of this.myForm.value.sizes let i=index">
+                            <input type="text" class="form-control" [formControlName]="i"/>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <button [disabled]="myForm.invalid" type="submit" class="bttn-g-p">Submit</button>
+                </form>
+<!--Reactive form ends-->
+            </div>
+        </div>
+    
+    </div>
+</div>
+

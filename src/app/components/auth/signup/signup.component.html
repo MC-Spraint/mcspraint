@@ -1,0 +1,47 @@
+
+<div class="cont">
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-6 mx-auto">
+            <div class="card rounded-0">
+    
+    
+                <div class="card-body">
+                    <h4 class="card-title">Sign Up</h4>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input [(ngModel)]="signUpUserData.name" name="name" type="text"
+                                class="form-control rounded-0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input [(ngModel)]="signUpUserData.email" name="email" type="email"
+                                class="form-control rounded-0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input [(ngModel)]="signUpUserData.password" name="password" type="password"
+                                class="form-control rounded-0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="repeat-password">Repeat-Password</label> 
+                            <input [(ngModel)]="repeatPass" name="repeat-password" type="password"
+                                class="form-control rounded-0" required>
+
+                                
+                                <p class="text-warning" *ngIf="this.checkPass">Password isn't matching*</p>
+                            <button (click)="signUpUser()" type="button" class="bttn-g-p mt-2">Sign Up</button>
+    
+                        </div>
+    
+                    </form>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+    </div>
+</div>

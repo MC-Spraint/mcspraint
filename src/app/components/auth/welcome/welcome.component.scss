@@ -1,0 +1,29 @@
+.cont{
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+.cont .container{
+    display:inline-block;
+    position:relative;
+}
+
+.cont .container .crd{
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 1rem;
+    width: 100%;
+    height:auto;
+    color: white;
+    background: linear-gradient(45deg,  rgb(31, 33, 124), rgb(8, 3, 49));
+}
+.cont .container .crd :hover{
+    background:rgb(29, 28, 28);
+    transition: 0.5s;
+    
+}

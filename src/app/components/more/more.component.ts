@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-more',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoreComponent implements OnInit {
 
-  constructor() { }
+  public page: any;
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.page = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
 }

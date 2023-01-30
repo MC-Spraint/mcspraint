@@ -1,0 +1,36 @@
+<div class="gap2"></div>
+<div class="cont">
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-6 mx-auto">
+            <div class="card rounded-0">
+    
+                
+                <div class="card-body">
+                    <h4 class="card-title">Log In</h4>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input [(ngModel)]="loginUserData.email" name="email" type="text" class="form-control rounded-0"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input [(ngModel)]="loginUserData.password" name="password" type="password"
+                                class="form-control rounded-0" required>
+    
+    
+                            <button (click)="logInUser()" type="button" class="bttn-g-p mt-2">Log In</button>
+    
+                        </div>
+    
+                    </form>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+    </div>
+</div>

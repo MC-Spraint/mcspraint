@@ -1,46 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+$hSC:linear-gradient(45deg,rgb(56, 59, 247) 20%, rgb(15, 4, 116)40%,rgb(0, 0, 0)60%);
+$bc:linear-gradient(-70deg,rgb(0, 11, 48) 30%, rgb(9, 1, 82)40%,rgb(3, 5, 109)60%,rgb(56, 59, 247)80%);
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    overflow-x: hidden!important;
+    min-height: 100%;
+    background: linear-gradient(-70deg,rgb(0, 11, 48) 30%, rgb(9, 1, 82)40%,rgb(3, 5, 109)60%,rgb(56, 59, 247)80%);
+}
+/*background-color:rgb(29, 28, 28);*/
+.gap {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    @media screen and (max-width: 1050px) {
+    display: none;
+    }
+}
 
+.cont{
+    overflow-x:hidden; overflow-y:hidden;
+}
 .h-sz-prm{
     font-weight: bold;
     font-style: italic;
 }
 .topic{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    padding:10px 40px 10px;
+    padding:7px 40px 7px;
     display: inline-block;
-    background-color: rgb(222, 243, 30);
-    color: black;
-    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(232, 253, 255), rgb(0, 225, 255));
+    color: white;
+    border-radius: 100rem 0%;
+    transform: skew(-25deg);
+    width:20rem;
 }
-.bttn-s{
-    color: rgb(255, 253, 253);
-    background-color:rgb(0, 150, 25);
-    font-weight: bold;
-    font-style: italic;
-    padding: 0.7rem 1.5rem;
-    border-radius: 30px;
-    margin-top:4px;
-    border: 0 none;
-    &:hover{
-    cursor: pointer;
-    color: black;
-    background-color:rgb(222, 243, 30);
-    }
-}
+
+
+
 .bttn-p{
-    border: 0 none;
-    color: rgb(255, 253, 253);
-    background-color: rgb(42, 81, 255);
     font-weight: bold;
     font-style: italic;
-    padding: 0.7rem 1.5rem;
-    border-radius: 30px;
-    margin-top:4px;
-    &:hover{
+    position: relative;
+    color: white;
+    background: blue;
+    text-decoration: none;
+    outline: 0 none;
+    border: none;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    margin:1rem 0rem;
+    border-radius: 3rem;
     cursor: pointer;
+}
+.bttn-p:hover{
     color: black;
-    background-color: white;
-    }
+    background: white;
+}
+
+/*Gradient buttons*/
+.bttn-g-p {
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background: linear-gradient(45deg, rgb(7, 255, 243), rgb(37, 59, 255));
+    text-decoration: none;
+    outline: 0 none;
+    border: none;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    margin:null 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.bttn-g-p:hover{
+    color: rgb(0, 38, 207);
+    background: white;
+}
+.bttn-g-p:disabled{
     
+    cursor: no-drop;
+
+}
+.bttn-g-s {
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background: linear-gradient(45deg, rgb(120, 255, 160), rgb(62, 255, 3));
+    text-decoration: none;
+    outline: 0 none;
+    border: none;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    margin:null 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
     
-  }
+}
+.bttn-g-s:hover{
+    color: rgb(21, 124, 0);
+    background: white;
+}
+.bttn-g-s:disabled{
+    
+    cursor: no-drop;
+}
+.bttn-g-d {
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background:linear-gradient(45deg,rgb(255, 0, 0),rgb(90, 3, 0));
+    text-decoration: none;
+    outline: 0 none;
+    border: none;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    margin:null 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.bttn-g-d:hover{
+    color: rgb(161, 0, 0);
+    background: white;
+}
+.bttn-g-d:disabled{
+    cursor: no-drop;
+}
+
+.bttn-g-prpl {
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background:linear-gradient(45deg,rgb(218, 16, 184),rgb(247, 0, 255));
+    text-decoration: none;
+    outline: 0 none;
+    border: none;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    margin:null 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.bttn-g-prpl:hover{
+    color: rgb(102, 0, 85);
+    background: white;
+}
+.bttn-g-prpl:disabled{
+    cursor: no-drop;
+}
+.bttn-g-pill{
+    border-radius: 3rem;
+
+}
+
+

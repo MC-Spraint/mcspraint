@@ -7,7 +7,7 @@
   height: 5rem;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10;
   animation-name: navbar;
   animation-duration: 3s;
 }
@@ -22,16 +22,31 @@
 #nav {
   background: transparent;
   display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 5rem;
-  z-index: 2;
-  overflow: hidden;
+  z-index: 1000;
+  
+}
+#nav .nav-left{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+}
+#nav .nav-right{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 990px) {
   #nav {
     display: none;
   }
@@ -39,36 +54,99 @@
     display: none;
   }
 }
-#nav ul {
+#nav .nav-left .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav .nav-left .logo a img{
+  height:3rem;
+  width:3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#nav .nav-left ul {
   display: flex;
   list-style: none;
-  
-  margin: auto 1rem;
+  margin: auto 0.5rem;
 }
-
-#nav ul li {
+#nav .nav-left ul li {
   display: block;
   cursor: pointer;
   font-weight: bold;
 }
-#nav ul li :hover {
+#nav .nav-left ul li :hover {
   color: black;
-  background-color: rgb(222, 243, 30);
+  background: linear-gradient(45deg, rgb(255, 255, 255)50%,blue 50%);
 }
-#nav ul li a {
+#nav .nav-left ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
 }
-#nav ul li a :hover {
-  color: blue;
-  background-color: red;
-}
-@media (min-width: 700px) {
+
+@media (min-width: 990px) {
   .navmobile {
     display: none;
-    z-index:2;
+    z-index:1000;
   }
   
 }
+
+
+
+.bttn-g-p, .bttn-g-d{
+  margin-right:1rem;
+}
+
+/*Wrapper of btn-dDown & dContent,
+needed to position the dropdown content*/
+.dDown{
+  display:block;
+  margin: auto 0.5rem;
+}
+/* Dropdown button*/
+.btn-dDown {
+  font-weight: bold;
+  position: relative;
+  color: white;
+  background: blue;
+  text-decoration: none;
+  outline: 0 none;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1.5rem;
+  
+}
+/* Dropdown Content (Hidden by Default)*/
+.dContent {
+  display: none;
+  position: absolute;
+  background: rgb(15, 4, 116);
+  color: white;
+  min-width: 160px;
+  margin: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px white;
+  
+}
+/* Links inside the dropdown */
+.dContent a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+  background: rgb(10, 9, 73);
+  }
+}
+/* Show the dropdown menu on hover */
+.dDown:hover .dContent {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dDown:hover .btn-dDown {
+  background: white;
+  color: black;
+}
+

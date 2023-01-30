@@ -1,0 +1,42 @@
+<div class="cont" id="TextForm" style="color:black;">
+    <div class="container mt-5 mx-auto">
+        <div class="text-center">
+            <span class="topic mt-5">
+                <h3 class="h-sz-prm">Contact</h3>
+            </span>
+        </div>
+        <div class="row pt-5 pb-5 mb-5">
+
+            <div class="card w-50 col-12">
+
+                <div class="card-body">
+                    <h5 class="card-title">Leave A Message</h5>
+                    <form [formGroup]="user" (ngSubmit)="sendMsg()">
+                        <div class="form-group">
+                            <label for="usrname">Full Name</label>
+                            <p style="float: right;"  class="text-warning" *ngIf="name && name.invalid && name.touched">*This field is required and should be 5 characters long at least</p>
+                            <input formControlName="name" type="text" class="form-control" name="usrname" placeholder="Enter your name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usremail">Email Address</label>
+                            <p style="float: right;" class="text-warning" *ngIf="email && email.invalid && email.touched">*This field is required, provide a valid email address</p>
+                            <input formControlName="email" type="email" class="form-control" name="usremail"
+                                placeholder="Enter your email address" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usrmessage">Your Message</label>
+                            <p style="float: right;"  class="text-warning" *ngIf="message && message.invalid && message.touched">*This field is required and should be 10 characters long at least</p>
+                            <textarea formControlName="message" class="form-control" name="usrmessage" rows="8" value={{this.e}}
+                                (change)="change($event)"></textarea>
+                        </div>
+
+                    
+
+                        <button [disabled]="user.invalid" type="submit" class="bttn-g-p">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,31 @@
+.cont{
+    color: white;
+}
+.card-text{
+    display: block;
+    
+}
+@media screen and (max-width:1120px){
+    .card-text{
+    display: block;
+    }
+}
+@media screen and (max-width:767px){
+    .card-text{
+    display:none
+    }
+}
+.crd{
+    color: white;
+    background: linear-gradient(45deg,  rgb(31, 33, 124), rgb(8, 3, 49));
+}
+.crd :hover{
+    // box-shadow: 0 8px 16px 0 rgb(189, 217, 255);
+    // transform: translateY(-10px);
+    background: white; 
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*to fix the Aos responsiveness in mobiles*/
+.forAos{overflow-x:hidden; overflow-y:hidden;}

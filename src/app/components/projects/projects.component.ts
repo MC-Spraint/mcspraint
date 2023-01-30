@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
+  public page: any;
+  constructor(private activatedRoute: ActivatedRoute) { }
 
-  constructor() { }
-
-  ngOnInit() {}
+  ngOnInit() {
+    this.page = this.activatedRoute.snapshot.paramMap.get('id');
+  }
 
 }
